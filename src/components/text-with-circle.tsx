@@ -8,7 +8,7 @@ type TextWithCircleProps = {
 export default function TextWithCircle({text} : TextWithCircleProps) {
 	return (
 		<div className=''>
-			<h3 className='subtitle'>{text}</h3>
+			<h3 className='subtitle text-[14px] md:text-[16px]'>{text}</h3>
 		</div>
 	)
 }
