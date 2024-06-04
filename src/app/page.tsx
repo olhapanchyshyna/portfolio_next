@@ -1,12 +1,15 @@
-import AboutMe from '@/components/about-me'
-import FirstScreen from '@/components/first-screen'
-import Image from "next/image";
+import AboutMe from "@/components/about-me";
+import Educations from "@/components/educations";
+import FirstScreen from "@/components/first-screen";
+import Skills from '@/components/skills'
 
 export default function Home() {
   return (
     <section>
-      <FirstScreen/>
-      <AboutMe/>
+      <FirstScreen />
+      <AboutMe />
+      <Educations />
+      <Skills />
     </section>
   );
 }
