@@ -15,7 +15,7 @@ export default function FirstScreen() {
   return (
     <section className="h-[100vh] bg-[url('/first-screen-bg.jpg')] bg-cover bg-no-repeat">
       <div className="flex justify-end">
-        <Sheet>
+        {/* <Sheet>
           <SheetTrigger className="mr-[30px] mt-[30px] h-[35px] w-[35px] text-[#e6e9eb]">
             <HamburgerMenuIcon className="h-[35px] w-[35px]" />
           </SheetTrigger>
@@ -58,7 +58,7 @@ export default function FirstScreen() {
               <MediaLinks />
             </div>
           </SheetContent>
-        </Sheet>
+        </Sheet> */}
       </div>
 
       <div className="m-auto flex w-[340px] flex-col pt-[150px] min-[500px]:w-[480px] min-[500px]:pt-[200px] md:w-[600px] xl:w-[870px]">
