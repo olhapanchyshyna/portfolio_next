@@ -1,4 +1,5 @@
 import AboutMe from "@/components/about-me";
+import Contacts from '@/components/contacts'
 import Educations from "@/components/educations";
 import FirstScreen from "@/components/first-screen";
 import Portfolio from "@/components/portfolio";
@@ -12,6 +13,7 @@ export default function Home() {
       <Skills />
       <Educations />
       <Portfolio />
+      <Contacts/>
     </section>
   );
 }

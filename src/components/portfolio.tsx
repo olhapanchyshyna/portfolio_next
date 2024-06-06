@@ -49,7 +49,7 @@ export default function Portfolio() {
       <div className="flex flex-col items-center">
         <TextWithCircle
           text="Portfolio"
-          className="ml-0 before:left-[-2px] md:before:left-0"
+          className="ml-0 before:left-[19%] md:before:left-[25%]"
         />
         <Title text="My Works" className="m-auto mt-[10px]" />
       </div>
