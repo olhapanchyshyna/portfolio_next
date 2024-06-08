@@ -73,7 +73,7 @@ export default function TimeLine (){
     <div className="mt-[60px] flex flex-col lg:flex-row items-center lg:items-start justify-between pl-[50px] py-[0]">
       {skillsData.map((col, colIndex) => (
         <div key={colIndex}>
-          <div className='education__list max-w-[360px]' >
+          <div className='education__list max-w-[300px] sm:max-w-[360px]' >
             <div className='education__li-sibtitle'>h</div>
             {col.column.map((item, itemIndex) => (
               <div key={itemIndex} className="mb-[50px]">
