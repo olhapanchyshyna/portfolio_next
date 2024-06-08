@@ -39,7 +39,7 @@ export default function Contacts() {
           </div>
           <div className="main-gradient main-btn-hover mr-[10px] rounded-[10px] px-[26px] py-[12px] text-[14px] font-bold text-white [box-shadow:2px_2px_20px_rgb(1,_0,_1)] [transition:all_500ms_ease-in-out]">
             <Link
-              href="/"
+              href="https://t.me/olya_panchyshyna"
               target="_blank"
               className="[transition:transform_0.3s_ease] hover:scale-125"
             >

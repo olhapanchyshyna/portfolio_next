@@ -31,7 +31,7 @@ export default function MediaLinks() {
         />
       </Link>
       <Link
-        href="/"
+        href="https://t.me/olya_panchyshyna"
         target="_blank"
         className="[transition:transform_0.3s_ease] hover:scale-125"
       >
