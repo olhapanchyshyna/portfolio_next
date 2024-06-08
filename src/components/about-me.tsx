@@ -4,7 +4,7 @@ import Title from "./title";
 
 export default function AboutMe() {
   return (
-    <section className="container flex flex-col items-center justify-between py-[50px] sm:py-[80px] lg:flex-row lg:py-[120px]">
+    <section id='aboutMe' className="container flex flex-col items-center justify-between py-[50px] sm:py-[80px] lg:flex-row lg:py-[120px]">
       <div className="mb-[20px] sm:mb-[40px] lg:hidden">
         <TextWithCircle text="About me" />
         <Title text="My name is Olha" />

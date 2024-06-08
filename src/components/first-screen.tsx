@@ -25,28 +25,28 @@ export default function FirstScreen() {
           >
             <SheetDescription className="mx-[15px] mt-[150px] flex flex-col text-[20px] font-medium uppercase leading-[36px] text-[#fff] md:text-[24px] xl:text-[28px]">
               <Link
-                href="/"
+                href="#aboutMe"
                 className="mb-[10px] flex items-center hover:text-sky-300"
               >
                 <ShadowInnerIcon className="mr-[10px]" />
                 <div>About me</div>
               </Link>
               <Link
-                href="/"
+                href="#skills"
                 className="mb-[10px] flex items-center hover:text-sky-300"
               >
                 <ShadowInnerIcon className="mr-[10px]" />
                 <div>My Skills</div>
               </Link>
               <Link
-                href="/"
+                href="#portfolio"
                 className="mb-[10px] flex items-center hover:text-sky-300"
               >
                 <ShadowInnerIcon className="mr-[10px]" />
                 <div>My Portfolio</div>
               </Link>
               <Link
-                href="/"
+                href="#educations"
                 className="mb-[10px] flex items-center hover:text-sky-300"
               >
                 <ShadowInnerIcon className="mr-[10px]" />

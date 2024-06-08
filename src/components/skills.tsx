@@ -93,7 +93,7 @@ const skills: Skill[] = [
 
 export default function Skills() {
   return (
-    <section className="container pb-[120px]">
+    <section id='skills' className="container pb-[120px]">
       <div className="flex flex-col items-center">
         <TextWithCircle text="Skills" className="ml-0 before:left-[-2px] md:before:left-0" />
         <Title text="Что я использую" className="m-auto mt-[10px]" />

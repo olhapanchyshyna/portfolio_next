@@ -45,7 +45,7 @@ const portfolio: TPortfolio[] = [
 
 export default function Portfolio() {
   return (
-    <section className="container pb-[120px]">
+    <section id="portfolio" className="container pb-[120px]">
       <div className="flex flex-col items-center">
         <TextWithCircle
           text="Portfolio"
@@ -69,8 +69,8 @@ export default function Portfolio() {
           }}
         >
           <CarouselContent className="w-[320px]">
-            {portfolio.map((item) => (
-              <CarouselItem key={item.title} className=" ">
+            {portfolio.map((item, index) => (
+              <CarouselItem key={item.title + index} className=" ">
                 <CardItem portfolio={item} />
               </CarouselItem>
             ))}
