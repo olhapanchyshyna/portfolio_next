@@ -178,3 +178,18 @@ body {
   top: 0px;
   left: -7px;
 }
+
+.portfolio__hideText {
+  color: rgba(255, 255, 255, 0.8901960784);
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: brightness(40%) blur(10px);
+  height: 100%;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  border-radius: 40px;
+  padding: 20px;
+}

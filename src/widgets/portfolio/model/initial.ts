@@ -8,25 +8,25 @@ export type TPortfolio = {
 export const portfolio: TPortfolio[] = [
   {
     descr: "This is an e-commerce website where users can buy products online.",
-    title: "Portfolio",
+    title: "Portfolio 1",
     img: "bg-[url('/bestAndPeople.png')]",
     link: "",
   },
   {
     descr: "This is an e-commerce website where users can buy products online.",
-    title: "Portfolio",
+    title: "Portfolio 2",
     img: "bg-[url('/bestAndPeople.png')]",
     link: "",
   },
   {
     descr: "This is an e-commerce website where users can buy products online.",
-    title: "Portfolio",
+    title: "Portfolio 3",
     img: "bg-[url('/bestAndPeople.png')]",
     link: "",
   },
   {
     descr: "This is an e-commerce website where users can buy products online.",
-    title: "Portfolio",
+    title: "Portfolio 4",
     img: "bg-[url('/bestAndPeople.png')]",
     link: "",
   },
