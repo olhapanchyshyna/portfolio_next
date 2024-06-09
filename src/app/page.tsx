@@ -1,19 +1,21 @@
-import AboutMe from "@/components/about-me";
-import Contacts from '@/components/contacts'
-import Educations from "@/components/educations";
-import FirstScreen from "@/components/first-screen";
-import Portfolio from "@/components/portfolio";
-import Skills from "@/components/skills";
+
+import { AboutMe } from "@/widgets/about-me";
+import { Contacts } from "@/features/contacts";
+import { FirstScreen } from '@/widgets/first-screen'
+import { Skills } from '@/widgets/skills'
+import { Educations } from '@/widgets/education'
+import { Portfolio } from '@/widgets/portfolio'
+import { SidePanel } from '@/widgets/side-panel'
 
 export default function Home() {
   return (
     <section>
-      <FirstScreen />
+      <FirstScreen SidePanel={SidePanel}/>
       <AboutMe />
       <Skills />
       <Educations />
       <Portfolio />
-      <Contacts/>
+      <Contacts />
     </section>
   );
 }
