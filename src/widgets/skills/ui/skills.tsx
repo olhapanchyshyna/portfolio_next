@@ -18,7 +18,7 @@ export function Skills() {
           text="Skills"
           className="ml-0 before:left-[-2px] md:before:left-0"
         />
-        <Title text="Что я использую" className="m-auto mt-[10px]" />
+        <Title text="What do I use" className="m-auto mt-[10px]" />
       </div>
       <div className="mt-[60px] hidden flex-wrap justify-between md:flex">
         {skills.map((skill) => (

@@ -6,9 +6,10 @@ type ButtonProps = {
   text: string;
   className?: string;
   href: string;
+  targetBlank?: boolean;
 };
 
-export function CustomButton({ text, className, href }: ButtonProps) {
+export function CustomButton({ text, className, href, targetBlank }: ButtonProps) {
   return (
     <Button
       className={cn(
@@ -16,7 +17,7 @@ export function CustomButton({ text, className, href }: ButtonProps) {
         className,
       )}
     >
-      <Link href={href}>{text}</Link>
+      <Link href={href} target={targetBlank ? '_blank' : '' }>{text}</Link>
     </Button>
   );
 }
