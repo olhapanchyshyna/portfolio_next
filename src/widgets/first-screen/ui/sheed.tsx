@@ -23,9 +23,9 @@ export default function Sheed() {
           e.preventDefault();
         }}
         side="left"
-        className="main-bg-color flex w-[230px] flex-col justify-between border-none px-[5px] md:w-[300px] md:px-[20px] xl:w-[350px]"
+        className=" main-bg-color flex w-[230px] flex-col justify-between border-none px-[5px] md:w-[300px] md:px-[20px] xl:w-[350px]"
       >
-        <SheetDescription className="mx-[15px] mt-[150px] flex flex-col text-[20px] font-medium uppercase leading-[36px] text-[#fff] md:text-[24px] xl:text-[28px]">
+        <SheetDescription className="animate__animated animate__fadeInLeft mx-[15px] mt-[150px] flex flex-col text-[20px] font-medium uppercase leading-[36px] text-[#fff] md:text-[24px] xl:text-[28px]">
           {navItems.map((item) => (
             <NavLink
               key={item.label}
