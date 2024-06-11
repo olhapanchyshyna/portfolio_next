@@ -1,13 +1,54 @@
+"use client";
 import { CustomButton } from "@/features/custom-button";
+import { useAboutDescAnimate } from "@/shared/hooks/use-about-desc-animate";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import { useRef } from "react";
 import { TextWithCircle } from "../../../entities/text-with-circle";
 import { Title } from "../../../entities/title";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export function AboutMe() {
+  const spanLetters = useRef<(HTMLSpanElement | null)[]>([]);
+  spanLetters.current = [];
+
+  const des =
+    "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpos(injected humour and the like).";
+
+  const spans = des.split("").map((letter, index) => {
+    if (index % 2 === 0) {
+      return (
+        <span
+          ref={(el) => {
+            spanLetters.current[index] = el;
+          }}
+          key={letter + index}
+          className="opacity-0"
+        >
+          {letter}
+        </span>
+      );
+    }
+    return (
+      <span
+        className="opacity-0"
+        ref={(el) => {
+          spanLetters.current[index] = el;
+        }}
+        key={letter + index}
+      >
+        {letter}
+      </span>
+    );
+  });
+
+  useAboutDescAnimate(spanLetters);
   return (
     <section
       id="aboutMe"
-      className="container flex flex-col items-center justify-between py-[50px] sm:py-[80px] lg:flex-row lg:items-start lg:py-[120px]"
+      className="aboutMe container flex flex-col items-center justify-between py-[50px] sm:py-[80px] lg:flex-row lg:items-start lg:py-[120px]"
     >
       <div className="mb-[20px] sm:mb-[40px] lg:hidden">
         <TextWithCircle text="About me" />
@@ -26,26 +67,19 @@ export function AboutMe() {
           <Title text="My name is Olha" />
         </div>
 
-        <div className="mt-[20px] text-[14px] font-medium leading-[21px] text-[#ffffffe3] lg:text-[16px]">
-          <p>
-            Many desktop publishing packages and web page editors now use Lorem
-            Ipsum as their default model text, and a search for lorem ipsum will
-            uncover many web sites still in their infancy. Various versions have
-            evolved over the years, sometimes by accident, sometimes on purpose
-            (injected humour and the like).
-          </p>
+        <div className="descr mt-[20px] text-[14px] font-medium leading-[21px] text-[#ffffffe3] lg:text-[16px]">
+          <p>{spans}</p>
           <br></br>
-          <p>
-            Many desktop publishing packages and web page editors now use Lorem
-            Ipsum as their default model text, and a search for lorem ipsum will
-            uncover many web sites still in their infancy. Various versions have
-            evolved over the years, sometimes by accident, sometimes on purpose
-            (injected humour and the like).
-          </p>
+          <p>{spans}</p>
         </div>
 
         <div className="mt-[100px] text-white">
-          <CustomButton text="Download Resume" href="/resume.pdf" targetBlank={true}/>
+          <CustomButton
+            className="btn"
+            text="Down <p >{spans}</p>load Resume"
+            href="/resume.pdf"
+            targetBlank={true}
+          />
         </div>
       </div>
     </section>
