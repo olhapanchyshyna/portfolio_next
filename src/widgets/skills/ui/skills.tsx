@@ -1,3 +1,4 @@
+"use client";
 import {
   Carousel,
   CarouselContent,
@@ -5,12 +6,32 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/shared/ui/carousel";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
 import { TextWithCircle } from "../../../entities/text-with-circle";
 import { Title } from "../../../entities/title";
 import { skills } from "../model/initial";
 import { CardItem } from "./card-item";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export function Skills() {
+
+  useEffect(() => {
+    gsap.to(".card", {
+      duration: 7,
+      scale: 1.1,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".card",
+        start: "200px 100%",
+        scrub: true,
+        markers: true,
+      },
+    });
+  }, []);
+
   return (
     <section id="skills" className="container pb-[120px]">
       <div className="flex flex-col items-center">
@@ -20,7 +41,7 @@ export function Skills() {
         />
         <Title text="What do I use" className="m-auto mt-[10px]" />
       </div>
-      <div className="mt-[60px] hidden flex-wrap justify-between md:flex">
+      <div className="card mt-[60px] md:mx-[20px] hidden flex-wrap justify-between opacity-60 md:flex">
         {skills.map((skill) => (
           <CardItem key={skill.title} skill={skill} />
         ))}
@@ -34,7 +55,7 @@ export function Skills() {
             loop: true,
           }}
         >
-          <CarouselContent className="w-[260px]">
+          <CarouselContent className="w-[240px]">
             {skills.map((skill) => (
               <CarouselItem key={skill.title} className=" ">
                 <CardItem skill={skill} />

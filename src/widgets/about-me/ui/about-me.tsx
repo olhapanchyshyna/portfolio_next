@@ -46,9 +46,6 @@ export function AboutMe() {
 
         <div className="mt-[100px] text-white">
           <CustomButton text="Download Resume" href="/resume.pdf" targetBlank={true}/>
-          {/* <Link href="/resume.pdf" target='_blank' className="text-white">
-            
-          </Link> */}
         </div>
       </div>
     </section>

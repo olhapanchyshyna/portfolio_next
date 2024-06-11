@@ -23,7 +23,6 @@ export function FirstScreen({ SidePanel }: FirstScreenProps) {
           I&apos;m a Fullstack developer
         </h1>
 
-   
         <div className="m-auto flex w-[330px] justify-between md:w-[400px] xl:w-[500px]">
           <LinkBtn text="Portfolio" href="#portfolio" />
           <LinkBtn text="About me" href="#aboutMe" />

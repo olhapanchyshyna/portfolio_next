@@ -3,6 +3,7 @@ export type Skill = {
   descr: string;
   img: string;
   bsh: string;
+  widthImg?: string;
 };
 
 export const skills: Skill[] = [
@@ -106,5 +107,19 @@ export const skills: Skill[] = [
     descr: "Figma используется для создания макетов и прототипов дизайна.",
     img: "/figma.png",
     bsh: "md:[box-shadow:0px_0px_74px_#fe42a7cc]",
+  },
+  {
+    title: "FSD",
+    descr: "Figma используется для создания макетов и прототипов дизайна.",
+    img: "/fsd.png",
+    bsh: "md:[box-shadow:0px_0px_74px_#fe42a7cc]",
+    widthImg: 'w-[100px]'
+  },
+  {
+    title: "GSAP",
+    descr: "Figma используется для создания макетов и прототипов дизайна.",
+    img: "/gsap.png",
+    bsh: "md:[box-shadow:0px_0px_74px_#fe42a7cc]",
+    widthImg: 'w-[100px]'
   },
 ];

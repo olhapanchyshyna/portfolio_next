@@ -14,10 +14,8 @@ export const NavLink = ({ href, text, setIsSheetOpen }: NavLinkProps) => {
   return (
     <ScrollIntoView
       selector={href}
-      className="mb-[10px] flex items-center hover:text-sky-300 cursor-pointer"
-      onClick={() =>
-				setIsSheetOpen(false)
-      }
+      className="mb-[10px] flex cursor-pointer items-center hover:text-sky-300"
+      onClick={() => setIsSheetOpen(false)}
     >
       <ShadowInnerIcon className="mr-[10px]" />
       <span>{text}</span>
