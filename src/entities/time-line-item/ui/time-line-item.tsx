@@ -1,7 +1,22 @@
+"use client";
+
+import { useEducationAnimate } from "@/shared/hooks/use-education-animate";
+
 import Image from "next/image";
-import { skillsData } from '../model/initial'
+import { useRef } from "react";
+import { skillsData } from "../model/initial";
+
 
 export function TimeLine() {
+  const firstColRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const secondColRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  firstColRefs.current = [];
+  secondColRefs.current = [];
+
+  useEducationAnimate(firstColRefs);
+  useEducationAnimate(secondColRefs);
+
   return (
     <div className="mt-[60px] flex flex-col items-center justify-between py-[0] pl-[50px] lg:flex-row lg:items-start">
       {skillsData.map((col, colIndex) => (
@@ -9,7 +24,18 @@ export function TimeLine() {
           <div className="education__list max-w-[300px] sm:max-w-[360px]">
             <div className="education__li-sibtitle">h</div>
             {col.column.map((item, itemIndex) => (
-              <div key={itemIndex} className="mb-[50px]">
+              <div
+                key={itemIndex}
+                ref={(el) => {
+                  if (colIndex === 0) {
+                    firstColRefs.current[itemIndex] = el;
+                  }
+                  if (colIndex === 1) {
+                    secondColRefs.current[itemIndex] = el;
+                  }
+                }}
+                className="mb-[50px]"
+              >
                 <div className="education__item_head">
                   <div className="education__sibtitle">
                     <Image

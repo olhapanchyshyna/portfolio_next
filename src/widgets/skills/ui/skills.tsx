@@ -27,7 +27,6 @@ export function Skills() {
         trigger: ".card",
         start: "200px 100%",
         scrub: true,
-        markers: true,
       },
     });
   }, []);

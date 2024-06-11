@@ -26,7 +26,6 @@ export function Portfolio() {
         trigger: ".portfolio",
         start: "100px 100%",
         scrub: true,
-        markers: true,
       },
     });
   }, []);
