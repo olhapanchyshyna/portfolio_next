@@ -15,7 +15,7 @@ export default function Home() {
       <Skills />
       <Educations />
       <Portfolio />
-      <Contacts />
+      <Contacts /> 
     </section>
   );
 }

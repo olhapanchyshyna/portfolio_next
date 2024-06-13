@@ -1,50 +1,51 @@
 "use client";
+
 import { CustomButton } from "@/features/custom-button";
 import { useAboutDescAnimate } from "@/shared/hooks/use-about-desc-animate";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import { useRef } from "react";
+import { MutableRefObject, useRef } from "react";
 import { TextWithCircle } from "../../../entities/text-with-circle";
 import { Title } from "../../../entities/title";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export function AboutMe() {
-  const spanLetters = useRef<(HTMLSpanElement | null)[]>([]);
-  spanLetters.current = [];
+  const spanWords = useRef<(HTMLSpanElement | null)[]>([]);
+  spanWords.current = [];
 
   const des =
-    "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpos(injected humour and the like).";
+    "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.";
 
-  const spans = des.split("").map((letter, index) => {
-    if (index % 2 === 0) {
-      return (
-        <span
-          ref={(el) => {
-            spanLetters.current[index] = el;
-          }}
-          key={letter + index}
-          className="opacity-0"
-        >
-          {letter}
-        </span>
-      );
-    }
-    return (
+  const createSpans = (
+    text: string,
+    spanWords: MutableRefObject<(HTMLSpanElement | null)[]>,
+  ) =>
+    text.split(/\s+/).map((word, index) => (
       <span
-        className="opacity-0"
+        key={word + index}
         ref={(el) => {
-          spanLetters.current[index] = el;
+          spanWords.current[index] = el;
         }}
-        key={letter + index}
+        className="inline-block opacity-0"
       >
-        {letter}
+        {word === "|" ? (
+          <>
+            {" "}
+            <br />
+            <br />
+          </>
+        ) : (
+          <>{word} &nbsp;</>
+        )}
       </span>
-    );
-  });
+    ));
 
-  useAboutDescAnimate(spanLetters);
+  const spans = createSpans(des, spanWords);
+
+  useAboutDescAnimate(spanWords);
+
   return (
     <section
       id="aboutMe"
@@ -69,14 +70,12 @@ export function AboutMe() {
 
         <div className="descr mt-[20px] text-[14px] font-medium leading-[21px] text-[#ffffffe3] lg:text-[16px]">
           <p>{spans}</p>
-          <br></br>
-          <p>{spans}</p>
         </div>
 
         <div className="mt-[100px] text-white">
           <CustomButton
             className="btn"
-            text="Down <p >{spans}</p>load Resume"
+            text="Download Resume"
             href="/resume.pdf"
             targetBlank={true}
           />
