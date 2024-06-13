@@ -69,7 +69,7 @@ export function AboutMe() {
           <p>{spans}</p>
         </div>
 
-        <div className="mt-[100px] text-white">
+        <div className="lg:mt-[100px] mt-[50px] text-white">
           <CustomButton
             className="btn"
             text="Download Resume"

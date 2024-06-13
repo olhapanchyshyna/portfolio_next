@@ -13,7 +13,7 @@ export const CardItem = ({ portfolio }: CardItemProps) => {
 
   return (
     <Card
-      className={`m-auto h-[310px] w-[270px] rounded-[40px] md:mx-[5px] md:my-[10px] md:w-[340px] ${portfolio.img} bg-cover bg-no-repeat cursor-pointer` }
+      className={`m-auto h-[300px] w-[300px] rounded-[40px] md:mx-[5px] md:my-[10px] md:w-[300px] ${portfolio.img} bg-cover bg-no-repeat cursor-pointer` }
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

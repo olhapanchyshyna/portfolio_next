@@ -39,7 +39,7 @@ export function Portfolio() {
         <Title text="My Works" className="m-auto mt-[10px]" />
       </div>
 
-      <div className="portfolio mt-[60px] hidden flex-wrap justify-between opacity-60 md:flex">
+      <div className="portfolio mt-[60px] md:mx-[20px] hidden flex-wrap justify-between opacity-60 md:flex">
         {portfolio.map((item) => (
           <CardItem key={item.title} portfolio={item} />
         ))}

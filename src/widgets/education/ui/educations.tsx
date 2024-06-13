@@ -4,7 +4,7 @@ import {TimeLine} from "../../../entities/time-line-item";
 
 export function Educations() {
   return (
-    <section id="educations" className="container pb-[120px] overflow-x-hidden">
+    <section id="educations" className="container pb-[120px] pt-[10px] overflow-x-hidden">
       <div className="flex flex-col items-center">
         <TextWithCircle
           text="Education"

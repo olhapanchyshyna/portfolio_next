@@ -20,7 +20,6 @@ export function Contacts() {
         start: "-100px center",
         end: "-200px 20%",
         scrub: true,
-        markers: true,
         onEnter: () =>
           gsap.to(btn, {
             opacity: 1,
