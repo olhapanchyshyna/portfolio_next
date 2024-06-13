@@ -2,14 +2,11 @@
 
 import { CustomButton } from "@/features/custom-button";
 import { useAboutDescAnimate } from "@/shared/hooks/use-about-desc-animate";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { MutableRefObject, useRef } from "react";
 import { TextWithCircle } from "../../../entities/text-with-circle";
 import { Title } from "../../../entities/title";
 
-gsap.registerPlugin(ScrollTrigger);
 
 export function AboutMe() {
   const spanWords = useRef<(HTMLSpanElement | null)[]>([]);
