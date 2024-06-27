@@ -34,7 +34,7 @@ export const portfolio: TPortfolio[] = [
     descr: "",
     title: "Coffee Shop",
     img: "bg-[url('/coffeShop.png')]",
-    link: "/",
+    link: "https://coffee-shop-fawn.vercel.app/pleasure",
   },
   {
     descr: "Development of an online lingerie store on the 'хорошоп' platform",
