@@ -13,7 +13,7 @@ export const CardItem = ({ portfolio }: CardItemProps) => {
 
   return (
     <Card
-      className={`m-auto h-[300px] w-[300px] rounded-[40px] md:mx-[5px] md:my-[10px] md:w-[300px] ${portfolio.img} bg-cover bg-no-repeat cursor-pointer` }
+      className={`m-auto h-[320px] w-[300px] rounded-[40px] md:mx-[5px] md:my-[10px] md:w-[300px] ${portfolio.img} bg-cover bg-center bg-no-repeat cursor-pointer` }
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -24,10 +24,10 @@ export const CardItem = ({ portfolio }: CardItemProps) => {
           <div className="mb-[20px] text-[25px] font-bold leading-[21px]">
             {portfolio.title}
           </div>
-          <div className="mb-[30px] text-center text-[16px] font-medium leading-[20px]">
+          <div className="mb-[30px] text-center text-[14px] font-medium leading-[20px]">
             {portfolio.descr}
           </div>
-          <CustomButton text="More" href="/" />
+          <CustomButton text="View project" href={portfolio.link} targetBlank={true}/>
         </div>
       )}{" "}
     </Card>
