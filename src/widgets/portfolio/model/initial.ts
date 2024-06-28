@@ -95,40 +95,40 @@ export const portfolio: TPortfolio[] = [
       "Front-end + WordPress. Semantic layout using BEM and Sass. Animated with JS and Animation",
     title: "Burger House",
     img: "bg-[url('/burgerHousе.png')]",
-    link: "/",
+    link: "/projects/burgerHouse/index.html",
   },
   {
     descr:
       "Front-end. Semantic layout using BEM and Sass. Animated with JS and Animation",
     title: "Softerio",
     img: "bg-[url('/softerio.png')]",
-    link: "/",
+    link: "/projects/softerio/index.html",
   },
   {
     descr:
       "Front-end. Semantic layout using BEM and Sass. Animated with JS and Animation",
     title: "MasterTao",
     img: "bg-[url('/mastertao.png')]",
-    link: "/",
+    link: "/projects/masterTao/index.html",
   },
   {
     descr:
       "Front-end. Semantic layout using BEM and Sass. Animated with JS and Animation",
     title: "Pulse",
     img: "bg-[url('/pulse.png')]",
-    link: "/",
+    link: "/projects/pulse/index.html",
   },
   {
     descr:
       "JS interactive and animations were added to the finished layout, also my task was to set up the project assembly",
     title: "Loan",
     img: "bg-[url('/loan.png')]",
-    link: "/",
+    link: "/projects/loan/index.html",
   },
-  {
-    descr: "Wordpress. The finished layout was put on wordpress",
-    title: "ChildHood",
-    img: "bg-[url('/childhood.png')]",
-    link: "/",
-  },
+  // {
+  //   descr: "Wordpress. The finished layout was put on wordpress",
+  //   title: "ChildHood",
+  //   img: "bg-[url('/childhood.png')]",
+  //   link: "/projects/childhood/index.php",
+  // },
 ];
