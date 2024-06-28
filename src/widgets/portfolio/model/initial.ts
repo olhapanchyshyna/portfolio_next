@@ -30,26 +30,26 @@ export const portfolio: TPortfolio[] = [
     descr: "",
     title: "RMT Dev",
     img: "bg-[url('/rmtDev.png')]",
-    link: "/",
+    link: "https://rmt-dev-seven.vercel.app/",
   },
 
   {
     descr: "",
     title: "Trek Bag",
     img: "bg-[url('/trekBag.png')]",
-    link: "/",
+    link: "https://trekbag-navy.vercel.app/",
   },
   {
     descr: "",
     title: "Corp",
     img: "bg-[url('/corp.png')]",
-    link: "/",
+    link: "https://corp-comment-theta.vercel.app/",
   },
   {
     descr: "",
     title: "Word Analytics",
     img: "bg-[url('/word1.png')]",
-    link: "/",
+    link: "https://word-analytics-psi.vercel.app/",
   },
   {
     descr: "",
