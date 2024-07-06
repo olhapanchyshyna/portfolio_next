@@ -31,12 +31,7 @@ export const skillsData = [
         description:
           'Syntax. Data types. Type casting in JavaScript. Working with strings Actions. debug. Functions. Arrays. Objects. Date and Time in JavaScript. The keyword is "this". Classes + OOP. Working with the DOM Asynchrony. Callback + Event Loop. webpack, rollup. ES6 import export.',
       },
-      {
-        title: "Udemy (Ivan Petrychenko)",
-        subtitle: "Web development courses",
-        description:
-          "Website development using BEM methodology, using Sass/Scss/Less preprocessors. using Git and GitHub. Creation of mobile adaptation of sites and applications. Optimize the speed of sites and validate the layout according to w3c standards. A robot with many ready-made plugins, install geo-maps on the site and work with fonts.",
-      },
+  
     ],
   },
   {
@@ -58,12 +53,6 @@ export const skillsData = [
         subtitle: "The Complete JavaScript + React Course Part 1",
         description:
           "Fundamentals of programming and algorithms. Fundamentals ООП. AJAX, JSON. Promise, LocalStorages, Async/Await. npm, Gulp, Webpack",
-      },
-      {
-        title: "Lemon school",
-        subtitle: "Web development courses",
-        description:
-          "Creation of adaptive, easy-to-use sites. Working with graphic editors in the context of layout: Photoshop, Zeplin, Figma, Avocode. with animations and using libraries.",
       },
       {
         title: "Lemon school",

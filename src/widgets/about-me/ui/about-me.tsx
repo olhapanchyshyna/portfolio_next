@@ -7,13 +7,12 @@ import { MutableRefObject, useRef } from "react";
 import { TextWithCircle } from "../../../entities/text-with-circle";
 import { Title } from "../../../entities/title";
 
-
 export function AboutMe() {
   const spanWords = useRef<(HTMLSpanElement | null)[]>([]);
   spanWords.current = [];
 
   const des =
-    "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.";
+    "Im an Frontend  developer with over a 2 years of professional experience. My journey as a developer began in early 2022, and since then, I have been continuously expanding my skills and knowledge in the field. I am passionate about creating responsive and user-friendly websites, and I strive for excellence in every project I undertake. I am dedicated to staying up-to-date with the latest industry trends and technologies, ensuring that I deliver high-quality solutions to meet client requirements. I also live abroad, which provides constant access to the Internet and the ability to always be in touch without interruptions caused by power outages.";
 
   const createSpans = (
     text: string,
@@ -69,7 +68,7 @@ export function AboutMe() {
           <p>{spans}</p>
         </div>
 
-        <div className="lg:mt-[100px] mt-[50px] text-white">
+        <div className="mt-[50px] text-white lg:mt-[100px]">
           <CustomButton
             className="btn"
             text="Download Resume"
