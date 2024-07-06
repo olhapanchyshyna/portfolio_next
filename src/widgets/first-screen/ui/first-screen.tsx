@@ -21,7 +21,7 @@ export function FirstScreen({ SidePanel }: FirstScreenProps) {
         />
 
         <h1 className="animate__animated animate__lightSpeedInLeft title mb-[60px] mt-[10px] text-[60px] font-bold leading-[70px] text-[rgba(255,_255,_255,_0.8901960784)] [text-shadow:#930196_5px_5px] min-[500px]:text-center md:text-[80px] md:leading-[90px] xl:mt-0 xl:text-[115px] xl:leading-[110px]">
-          I&apos;m a Fullstack developer
+          I&apos;m a Frontend developer
         </h1>
         
         <div className="m-auto flex w-[330px] justify-between md:w-[400px] xl:w-[500px]">

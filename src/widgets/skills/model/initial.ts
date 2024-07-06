@@ -10,114 +10,113 @@ export const skills: Skill[] = [
   {
     title: "HTML5",
     descr:
-      "HTML5 позволяет создавать более SEO-оптимизированную структуру вашего продукта.",
+      "Used to create and structure content on web pages",
     img: "/html5.png",
     bsh: "md:[box-shadow:0px_0px_74px_#fe42a7cc]",
   },
   {
     title: "CSS3",
-    descr: "CSS3 позволяет улучшить стиль и внешний вид вашего веб-приложения.",
+    descr: "Used to describe the appearance and formatting of HTML documents.",
     img: "/css3.png",
     bsh: "md:[box-shadow:0px_0px_74px_#952cffcc]",
   },
   {
     title: "JavaScript",
     descr:
-      "JavaScript используется для создания интерактивных элементов на веб-страницах.",
+      "Is a programming language that is used to create dynamic and interactive elements on web pages",
     img: "/js.png",
     bsh: "md:[box-shadow:0px_0px_74px_#fe42a7cc]",
   },
   {
     title: "React",
-    descr:
-      "React используется для построения быстрых и интерактивных пользовательских интерфейсов.",
+    descr: "Allows developers to build components that can manage their state and render the user interface based on those states",
     img: "/react.png",
     bsh: "md:[box-shadow:0px_0px_74px_#952cffcc]",
   },
   {
     title: "Next.js",
     descr:
-      "Next.js позволяет создавать быстрые и SEO-дружественные приложения на React.",
+      "A popular framework for React that makes it easy to create modern web applications and websites",
     img: "/nextjs.png",
     bsh: "md:[box-shadow:0px_0px_74px_#fe42a7cc]",
   },
   {
     title: "TypeScript",
-    descr: "TypeScript помогает писать более надежный и масштабируемый код.",
+    descr: "A strongly typed programming language based on JavaScript that adds static typing to code",
     img: "/typescript.png",
     bsh: "md:[box-shadow:0px_0px_74px_#952cffcc]",
   },
   {
     title: "Tailwind",
     descr:
-      "Tailwind CSS позволяет быстро создавать красивые пользовательские интерфейсы.",
+      "A CSS framework that provides a set of ready-made classes for quickly and easily creating user interfaces",
     img: "/tailwind.png",
     bsh: "md:[box-shadow:0px_0px_74px_#fe42a7cc]",
   },
   {
     title: "Shadcn",
     descr:
-      "Shadcn используется для создания теней и улучшения визуальных эффектов.",
+      "Shadcn is a collection of high-quality, accessible UI components for building modern web applications with React. ",
     img: "/shadcn.jpeg",
     bsh: "md:[box-shadow:0px_0px_74px_#952cffcc]",
   },
   {
     title: "Auth.js",
     descr:
-      "Shadcn используется для создания теней и улучшения визуальных эффектов.",
+      "Is a JavaScript library or module that is used to manage authentication and authorization in web applications.",
     img: "/nextauth.png",
     bsh: "md:[box-shadow:0px_0px_74px_#952cffcc]",
   },
   {
     title: "PostgreSQL",
     descr:
-      "Shadcn используется для создания теней и улучшения визуальных эффектов.",
+      "Is a powerful object-relational database management system",
     img: "/postgresql.png",
     bsh: "md:[box-shadow:0px_0px_74px_#952cffcc]",
   },
   {
     title: "Zustand",
     descr:
-      "Shadcn используется для создания теней и улучшения визуальных эффектов.",
+      "This is a library for managing state in React applications.",
     img: "/zustand.png",
     bsh: "md:[box-shadow:0px_0px_74px_#952cffcc]",
   },
   {
     title: "Stripe",
     descr:
-      "Shadcn используется для создания теней и улучшения визуальных эффектов.",
+      "This is a payment platform that provides tools for accepting payments via the Internet.",
     img: "/stripe.svg",
     bsh: "md:[box-shadow:0px_0px_74px_#952cffcc]",
   },
   {
     title: "Prisma",
     descr:
-      "Shadcn используется для создания теней и улучшения визуальных эффектов.",
+      "Is a modern ORM for Node.js and TypeScript that simplifies interaction with databases",
     img: "/prisma.png",
     bsh: "md:[box-shadow:0px_0px_74px_#952cffcc]",
   },
   {
     title: "Wordpress",
-    descr: "Wordpress позволяет легко управлять контентом вашего сайта.",
+    descr: "Is a popular free content management system (CMS) for creating and managing websites and blogs",
     img: "/wordpress.png",
     bsh: "md:[box-shadow:0px_0px_74px_#952cffcc]",
   },
   {
     title: "Figma",
-    descr: "Figma используется для создания макетов и прототипов дизайна.",
+    descr: "It is an online user interface design tool that allows designers to create and collaborate on projects in real time",
     img: "/figma.png",
     bsh: "md:[box-shadow:0px_0px_74px_#fe42a7cc]",
   },
   {
     title: "FSD",
-    descr: "Figma используется для создания макетов и прототипов дизайна.",
+    descr: "The FSD architecture allows developers to work across different layers of an application, integrating and coordinating functionality for seamless development.",
     img: "/fsd.png",
     bsh: "md:[box-shadow:0px_0px_74px_#fe42a7cc]",
     widthImg: 'w-[100px]'
   },
   {
     title: "GSAP",
-    descr: "Figma используется для создания макетов и прототипов дизайна.",
+    descr: "Is a powerful JavaScript library for creating animations in web applications",
     img: "/gsap.png",
     bsh: "md:[box-shadow:0px_0px_74px_#fe42a7cc]",
     widthImg: 'w-[100px]'
