@@ -21,38 +21,37 @@ export const portfolio: TPortfolio[] = [
     link: "https://petsoft-sigma.vercel.app/",
   },
   {
-    descr: "",
+    descr:
+      "An event search service that allows users to find events both locally and across multiple cities. Events are sorted chronologically, prioritizing those closest in time, and can be filtered by specific cities.",
     title: "Evento",
     img: "bg-[url('/evento.png')]",
     link: "https://evento-one.vercel.app/",
   },
   {
-    descr: "",
+    descr:
+      "Job search service. With a search bar for job titles or technologies, results include job titles, companies, and publication days. Users filter jobs by relevance or date posted. Each listing includes: job title, company, description, employment type, salary, location, and required qualifications.",
     title: "RMT Dev",
     img: "bg-[url('/rmtDev.png')]",
     link: "https://rmt-dev-seven.vercel.app/",
   },
 
   {
-    descr: "",
+    descr:
+      "This project is a to-do list management application that allows users to add, delete, filter, and mark items as completed.",
     title: "Trek Bag",
     img: "bg-[url('/trekBag.png')]",
     link: "https://trekbag-navy.vercel.app/",
   },
   {
-    descr: "",
+    descr:
+      "This project is an online service for publicly writing and viewing reviews of companies. Users can share their opinions and read other people's reviews using various interface features. There is also filtering of reviews by company",
     title: "Corp",
     img: "bg-[url('/corp.png')]",
     link: "https://corp-comment-theta.vercel.app/",
   },
   {
-    descr: "",
-    title: "Word Analytics",
-    img: "bg-[url('/word1.png')]",
-    link: "https://word-analytics-psi.vercel.app/",
-  },
-  {
-    descr: "",
+    descr:
+      "Online coffee store using filtering by country as well as a search bar",
     title: "Coffee Shop",
     img: "bg-[url('/coffeShop.png')]",
     link: "https://coffee-shop-fawn.vercel.app/pleasure",
@@ -125,10 +124,11 @@ export const portfolio: TPortfolio[] = [
     img: "bg-[url('/loan.png')]",
     link: "/projects/loan/index.html",
   },
-  // {
-  //   descr: "Wordpress. The finished layout was put on wordpress",
-  //   title: "ChildHood",
-  //   img: "bg-[url('/childhood.png')]",
-  //   link: "/projects/childhood/index.php",
-  // },
+  {
+    descr:
+      "This service displays the number of letters and words, as well as the remaining number of characters for the Instagram and Facebook platform.",
+    title: "Word Analytics",
+    img: "bg-[url('/word1.png')]",
+    link: "https://word-analytics-psi.vercel.app/",
+  },
 ];
