@@ -15,6 +15,13 @@ export const portfolio: TPortfolio[] = [
   },
   {
     descr:
+      "Website development for a producer. Design development, website development using Next.js & TypeScript.  Sending data from a form to a telegram channel",
+    title: "Vika Creator",
+    img: "bg-[url('/vika.png')]",
+    link: "https://vika-creator.vercel.app/",
+  },
+  {
+    descr:
       "Educational project on React, Next.js, TypeScript, Tailwind with registration, authorization(NextAuth)  and payment(Stripe) with a PostgreSQL database ",
     title: "Pet Soft",
     img: "bg-[url('/petSoft.png')]",
