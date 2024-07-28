@@ -15,7 +15,7 @@ export const portfolio: TPortfolio[] = [
   },
   {
     descr:
-      "Website development for a producer. Design development, website development using Next.js & TypeScript.  Sending data from a form to a telegram channel",
+      "Website development for a producer. Design development, website development using Next.js & TypeScript.  Sending data from a form to a telegram channel + Headless Wordpress",
     title: "Vika Creator",
     img: "bg-[url('/vika.png')]",
     link: "https://vika-creator.vercel.app/",
@@ -48,6 +48,13 @@ export const portfolio: TPortfolio[] = [
     title: "Trek Bag",
     img: "bg-[url('/trekBag.png')]",
     link: "https://trekbag-navy.vercel.app/",
+  },
+  {
+    descr:
+      "Website development, using Next.js + Headless Wordpress",
+    title: "Top Grade",
+    img: "bg-[url('/topGrade.png')]",
+    link: "https://top-grade.vercel.app/",
   },
   {
     descr:
