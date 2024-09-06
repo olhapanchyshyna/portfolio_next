@@ -28,6 +28,10 @@ body {
   z-index: -1;
 }
 
+.first-screen-bg {
+  background: rgb(26,96,133);
+  background: linear-gradient(172deg, rgba(26,96,133,1) 0%, rgba(79,9,112,1) 82%);
+}
 .main-color {
   color: #930196;
 }

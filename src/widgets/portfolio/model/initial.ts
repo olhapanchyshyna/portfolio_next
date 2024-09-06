@@ -51,6 +51,13 @@ export const portfolio: TPortfolio[] = [
   },
   {
     descr:
+      "Landing made on Next.js, Tailwind with adaptation for all devices with libraries: intl-tel-input, ion.RangeSlider.",
+    title: "Generali",
+    img: "bg-[url('/generali.png')]",
+    link: "https://generali-psi.vercel.app/",
+  },
+  {
+    descr:
       "Website development, using Next.js + Headless Wordpress",
     title: "Top Grade",
     img: "bg-[url('/topGrade.png')]",
@@ -144,5 +151,5 @@ export const portfolio: TPortfolio[] = [
     title: "Word Analytics",
     img: "bg-[url('/word1.png')]",
     link: "https://word-analytics-psi.vercel.app/",
-  },
+  }
 ];

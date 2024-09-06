@@ -121,4 +121,11 @@ export const skills: Skill[] = [
     bsh: "md:[box-shadow:0px_0px_74px_#fe42a7cc]",
     widthImg: 'w-[100px]'
   },
+  {
+    title: "i18n",
+    descr: "Is the process of preparing an application to support multiple languages ​​and cultures",
+    img: "/translation.png",
+    bsh: "md:[box-shadow:0px_0px_74px_#fe42a7cc]",
+    widthImg: 'w-[60px]'
+  },
 ];
